@@ -1,25 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import {
+  HashRouter as Router,
+  Route,
+  Link,
+  Switch,
+  NavLink,
+} from "react-router-dom";
+import * as Scroll from "react-scroll";
+import {
+  Link as LinkS,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
+import Home from "./components/Home";
+import Login from "./components/Login";
+import Register from "./components/Register";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/logowanie" component={Login} />
+            <Route path="/rejestracja" component={Register} />
+          </Switch>
+        </>
+      </Router>
+    </>
   );
 }
 

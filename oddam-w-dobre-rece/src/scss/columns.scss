@@ -1,0 +1,40 @@
+div.columns-containter {
+  background-image: url("./../assets/3-Columns-Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 15rem;
+  width: 100vw;
+  div.columns-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    div.columns-element {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 20rem;
+      h1 {
+        font-weight: 300;
+        font-size: 3rem;
+        color: $brown;
+      }
+      p:first-of-type {
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: -0.35px;
+        color: $graphite;
+        padding: 10px;
+      }
+      p:last-of-type {
+        color: $graphite;
+        font-family: $font-alt;
+        font-weight: 300;
+        font-size: 0.7rem;
+        text-align: center;
+        letter-spacing: -0.35px;
+      }
+    }
+  }
+}
