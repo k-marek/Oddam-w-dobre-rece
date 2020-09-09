@@ -21,7 +21,7 @@ const HomeHeader = () => {
   return (
     <>
       <Router>
-        <header>
+        <header name="start">
           <section className="left-section"></section>
           <section className="right-section">
             <div className="container-nav">

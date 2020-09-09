@@ -1,0 +1,77 @@
+div.steps-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: $graphite;
+    text-align: center;
+    letter-spacing: -0.75px;
+    font-weight: normal;
+    padding: 30px;
+  }
+  h1:after {
+    content: url(./../assets/Decoration.svg);
+    display: block;
+    transform: scale(0.8);
+    padding-top: 20px;
+  }
+  div.steps-content {
+    width: 100vw;
+    height: 13rem;
+    background-color: #f0f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div.steps-element {
+      width: 10rem;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        color: $graphite;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+      div.line {
+        border-bottom: 0.5px solid $graphite;
+        padding: 3px;
+        width: 50px;
+      }
+      p:last-of-type {
+        font-size: 0.9rem;
+        padding: 7px;
+      }
+      .el1:before {
+        content: url(./../assets/Icon-1.svg);
+        transform: scale(0.7);
+      }
+      .el2:before {
+        content: url(./../assets/Icon-2.svg);
+        transform: scale(0.7);
+      }
+      .el3:before {
+        content: url(./../assets/Icon-3.svg);
+        transform: scale(0.7);
+      }
+      .el4:before {
+        content: url(./../assets/Icon-4.svg);
+        transform: scale(0.7);
+      }
+    }
+  }
+  a {
+    text-transform: uppercase;
+    text-align: center;
+    color: $graphite;
+    border: 0.5px solid $graphite;
+    font-size: 1.3rem;
+    font-weight: 300;
+    width: 200px;
+    padding: 10px 30px;
+    margin: 25px;
+  }
+}
